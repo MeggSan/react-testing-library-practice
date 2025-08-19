@@ -9,7 +9,7 @@ export const Calculator = ({ a, b, operation }: CalculatorProps) => {
     switch (operation) {
       case "add":
         return a + b;
-      case "subtract":
+      case "substract":
         return a - b;
       case "multiply":
         return a * b;

@@ -36,7 +36,7 @@ export const Orders: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    if(user) fetchOrders();
+    if (user) fetchOrders();
   }, [fetchOrders, user]);
 
   if (!user) {

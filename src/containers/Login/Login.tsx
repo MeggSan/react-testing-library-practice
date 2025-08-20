@@ -15,7 +15,7 @@ const mockSuperAdmin = {
   password: "superadmin123!",
 };
 
-const mockVisualuizer = {
+const mockVisualizer = {
   username: "visualizer1@example.com",
   password: "vis1pass456@",
 };

@@ -55,11 +55,13 @@ const mockOrders = [
 ];
 
 const mockGetOrders = getOrders as Mock;
+const mockUseSession = useSession as Mock;
 
 describe("<Orders />", () => {
   const handleRenderOrders = (userRole: string) => {
     const mockUser = userRole ? { role: userRole } : null;
-    (useSession as Mock).mockReturnValue({ user: mockUser });
+    // (useSession as Mock).mockReturnValue({ user: mockUser });
+    mockUseSession.mockReturnValue({ user: mockUser });
     render(
       <SessionProvider>
         <MemoryRouter>

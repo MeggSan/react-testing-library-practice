@@ -1,4 +1,4 @@
-import { API_URL } from "./contants";
+import { API_URL } from "./constants";
 const path = "/orders/";
 
 export const getOrders = async () => {

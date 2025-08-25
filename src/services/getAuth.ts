@@ -1,4 +1,4 @@
-import { API_URL } from './contants';
+import { API_URL } from "./constants";
 const path = "/auth/";
 
 export const getAuth = async (email: string, password: string) => {
@@ -7,8 +7,8 @@ export const getAuth = async (email: string, password: string) => {
       `${API_URL}${path}?email=${email}&password=${password}`
     );
     const data = await response.json();
-    if(data?.length === 0) {
-        throw new Error("Invalid username or password");
+    if (data?.length === 0) {
+      throw new Error("Invalid username or password");
     }
     return data?.[0];
   } catch (error) {
